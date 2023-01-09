@@ -3,18 +3,17 @@
     font-weight: 300;
 }
 body{
+    position: relative;
     background-color: rgba(250, 235, 215, 0.579);
 }
 
 #title-container, .title, .side-img, .subtitle, #recipes-container, .recipe, img, a, p {
     box-sizing: border-box;
-    display: inline-block;
     border-radius: 10px;
 }
-
-
-
-
+.side-img, .recipe, image, a, p{
+    display: inline-block;
+}
 
 #title-container {
     margin: auto;
@@ -31,7 +30,7 @@ body{
 .side-img {
     width: 30px;
     height: auto;
-    margin: 0px -5px;
+    margin: 0px -20px;
     margin-bottom: -11.9px;
 }
 
