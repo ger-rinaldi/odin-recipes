@@ -41,7 +41,14 @@ body {
 
 .container-all{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+}
+
+@media (max-width: 1000px){
+    .container-all{
+        flex-direction: column;
+    }
 }
 
 .container-info{
