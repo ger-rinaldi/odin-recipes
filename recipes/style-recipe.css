@@ -1,0 +1,84 @@
+* {
+    font-family: Rubik, sans-serif, monospace;
+    font-weight: 300;
+}
+
+body {
+    background-color: rgba(250, 235, 215, 0.579);
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#header-container {
+    margin: 0;
+    background-color: burlywood;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+}
+
+.site-name {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.laurel {
+    width: 30px;
+    height: auto;
+    margin: -11.9px -15px;
+}
+
+.recipe-name {
+    background-color: burlywood;
+    display: block;
+    font-weight: 400;
+    font-style: italic;
+    padding: 0 600px 20px 100px;
+    margin: auto;
+}
+
+.container-all{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-info{
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 60%;
+}
+.description,.steps, .ingredients{
+    background-color: #e9b86960;
+    padding: 15px;
+    padding-top: 3px;
+    border-radius: 15px;
+    margin: 20px;
+    
+}
+.subtitle-container ul li, .subtitle-container ol li{
+    margin-bottom: 4px;
+}
+.subtitle{
+    margin-bottom: 20px;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    border-radius: 10px;
+    width: 75%;
+}
+
+.footer{
+    background-color: burlywood; ;
+    padding: 20px;
+}
+
+.footer a{
+    color: black;
+}
