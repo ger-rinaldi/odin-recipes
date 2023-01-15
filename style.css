@@ -6,9 +6,8 @@
     margin: 0;
 }
 body{
-    background-color: rgba(250, 235, 215, 0.579);
-    margin: 0px;
-    padding: 0px;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -22,7 +21,7 @@ body{
     padding: 15px;
 }
 
-.logo{
+.header .logo{
     display: flex;
 }
 
@@ -36,7 +35,7 @@ body{
     height: auto;
 }
 
-.nav{
+.header .nav{
     display: flex;
     gap: 20px;
 }
@@ -55,13 +54,12 @@ body{
     color: #433e3e;
 }
 
-/*.subtitle {
-    background-color: burlywood;
-    display: block;
+.subtitle {
     font-weight: 400;
     font-style: italic;
-    padding: 0 600px 20px 100px ;
-    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .recipes-container{
@@ -69,32 +67,25 @@ body{
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 10px;
-    background-color: #f3801b44;
+    background-color: #dcea8265;
     padding: 20px;
     margin: 50px;
 }
 
-.recipe{
-    max-width: 400px;
-    max-height: 400px;
-    position: relative;
-    
-    flex: 1 1 240px;
-    display: flex;
-    justify-content: center;
+.rounded{
+    border-radius: 10px;
 }
 
-.food-image, .food-name, #recipes-container {
-    box-sizing: border-box;
-    border-radius: 10px;
+.recipe{
+    position: relative;
+    flex: 0 0 278px;
+    display: flex;
+    justify-content: center;
 }
 
 .food-image{
     width: 100%;
     height: auto;
-    
-    flex-shrink: 3;
-    object-fit: cover;
 }
 
 .food-image:hover{
@@ -106,10 +97,9 @@ body{
 .food-name{
     position: absolute;
     left: 0px;
-    top: -10px;
     padding: 5px;
     text-align: center;
     font-weight: 400;
-    background-color: #f6eff86b;
+    background-color: #f6eff879;
     color: black;
-}*/
+}
