@@ -1,6 +1,9 @@
 *{
     font-family: Rubik, sans-serif, monospace;
     font-weight: 300;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 body{
     background-color: rgba(250, 235, 215, 0.579);
@@ -9,27 +12,50 @@ body{
 }
 
 
-#header-container {
-    margin: 0;
-    background-color: burlywood;
+.header {
+    background-color: #dcea82;
     display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
 }
 
-.site-name {
+.logo{
+    display: flex;
+}
+
+.logo .site-name {
     font-weight: 600;
-    font-size: 50px;
+    font-size: 30px;
 }
 
-.laurel {
-    width: 30px;
+.logo .laurel {
+    width: 20px;
     height: auto;
-    margin: -11.9px -15px;
 }
 
-.subtitle {
+.nav{
+    display: flex;
+    gap: 20px;
+}
+
+.nav li{
+    list-style-type: none;
+}
+
+.nav li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #1d1b1b;
+}
+
+.nav li a:hover {
+    color: #433e3e;
+}
+
+/*.subtitle {
     background-color: burlywood;
     display: block;
     font-weight: 400;
@@ -38,7 +64,7 @@ body{
     margin: auto;
 }
 
-#recipes-container{
+.recipes-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -86,4 +112,4 @@ body{
     font-weight: 400;
     background-color: #f6eff86b;
     color: black;
-}
+}*/
