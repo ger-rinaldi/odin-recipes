@@ -1,42 +1,65 @@
 * {
     font-family: Rubik, sans-serif, monospace;
     font-weight: 300;
-}
-
-body {
-    background-color: rgba(250, 235, 215, 0.579);
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
 
+body {
+    background-color: rgba(250, 235, 215, 0.579);
+}
 
-#header-container {
-    margin: 0;
-    background-color: burlywood;
+
+.header {
+    background-color: #dcea82;
     display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
 }
 
-.site-name {
+.header .logo {
+    display: flex;
+}
+
+.logo .site-name {
     font-weight: 600;
-    font-size: 50px;
+    font-size: 30px;
 }
 
-.laurel {
-    width: 30px;
+.logo .laurel {
+    width: 20px;
     height: auto;
-    margin: -11.9px -15px;
+}
+
+.header .nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav li {
+    list-style-type: none;
+}
+
+.nav li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #1d1b1b;
+}
+
+.nav li a:hover {
+    color: #433e3e;
 }
 
 .recipe-name {
-    background-color: burlywood;
-    display: block;
+    background-color: #dcea8249;
+    padding: 20px;
+    padding-left: 15%;
     font-weight: 400;
     font-style: italic;
-    padding: 0 600px 20px 100px;
-    margin: auto;
 }
 
 .container-all{
@@ -49,6 +72,24 @@ body {
     .container-all{
         flex-direction: column;
     }
+
+    .container-info{
+        margin: 20px auto;
+    }
+
+    .info{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 400px;
+    }
+
+    .image-container{
+        order: -1;
+        margin: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 400px;
+    }
 }
 
 .container-info{
@@ -56,8 +97,8 @@ body {
     flex-wrap: wrap;
     flex: 1 1 60%;
 }
-.description,.steps, .ingredients{
-    background-color: #e9b86960;
+.info{
+    background-color: #d4e66096;
     padding: 15px;
     padding-top: 3px;
     border-radius: 15px;
@@ -65,6 +106,7 @@ body {
     
 }
 .subtitle-container ul li, .subtitle-container ol li{
+    margin-left: 10px;
     margin-bottom: 4px;
 }
 .subtitle{
@@ -82,7 +124,7 @@ body {
 }
 
 .footer{
-    background-color: burlywood; ;
+    background-color: #dcea8249;
     padding: 20px;
 }
 
